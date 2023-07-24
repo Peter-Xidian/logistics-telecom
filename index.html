@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ===== MATERIAL ICONS =====-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===== FAVICON =====-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Logistics || Telecom</title>
+  </head>
+
+  <body>
+    <!-- ===== LOGISTICS | TELECOMS =====-->
+    <main class="lt">
+      <!-- SIDEBAR SECTION -->
+      <aside class="flex-center flex-col sidebar">
+        <div class="flex-center sidebar-logo">
+          <h1>Logistics | <span>Telecom.</span></h1>
+        </div>
+
+        <ul class="flex-center flex-col sidebar-nav">
+          <li class="sn active">
+            <span class="material-symbols-outlined"> dashboard </span>Dashboard
+          </li>
+          <li class="sn">
+            <span class="material-symbols-outlined"> inventory </span>Orders
+          </li>
+          <li class="sn">
+            <span class="material-symbols-outlined"> checklist </span>History
+          </li>
+        </ul>
+
+        <div class="flex-center sidebar-logout">
+          <span class="material-symbols-outlined"> logout </span>
+          <p>Log out</p>
+        </div>
+      </aside>
+
+      <!--===== DASHBOARD =====-->
+      <section class="flex-center flex-col dashboard">
+        <!-- HEADER SECTION -->
+        <header class="flex-center header">
+          <div class="flex-center flex-col header-title">
+            <h3>Today's Report</h3>
+            <p>Month 00th, 0000</p>
+          </div>
+
+          <nav class="flex-center nav">
+            <div class="nav-notif">
+              <span class="material-symbols-outlined" id="nn-bell">
+                notifications
+              </span>
+              <span id="nn-bell-new"></span>
+
+              <div class="flex-center flex-col nn-drop"></div>
+            </div>
+
+            <div class="flex-center nav-profile">
+              <img src="" alt="" loading="lazy" />
+              <p><span>Lavie Ornella</span> <span>Tech Support</span></p>
+            </div>
+          </nav>
+        </header>
+
+        <div class="flex-center lt-containers">
+          <div class="flex-center ltc db">
+            <div class="flex-center stats">
+              <div class="flex-center flex-col s-card">
+                <h4>2,870</h4>
+                <p>Total Orders (Current Month)</p>
+                <span class="material-symbols-outlined"> north_east </span>
+              </div>
+
+              <div class="flex-center flex-col s-card">
+                <h4>159</h4>
+                <p>New Queries</p>
+                <span class="material-symbols-outlined"> north_east </span>
+              </div>
+
+              <div class="flex-center flex-col s-card">
+                <h4>20</h4>
+                <p>Total Deliveries (Today)</p>
+                <span class="material-symbols-outlined"> north_east </span>
+              </div>
+
+              <div class="flex-center flex-col s-card">
+                <h4>Rwf 6,750</h4>
+                <p>Amount Due</p>
+                <span class="material-symbols-outlined"> north_east </span>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col ltc-queries">
+              <div class="flex-center q-header">
+                <h4>All Queries</h4>
+
+                <div class="flex-center qh-options">
+                  <div class="flex-center qho-search">
+                    <i class="bx bx-search"></i>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder=""
+                      autocomplete="on"
+                      required
+                      class="qhos-input"
+                    />
+                    <button>Search</button>
+                  </div>
+
+                  <div class="flex-center qho-filter">
+                    <i class="bx bx-filter"></i>
+                    <p>Filter</p>
+
+                    <div class="qhof-drop"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      window.addEventListener("load", AOS.refresh);
+    </script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
