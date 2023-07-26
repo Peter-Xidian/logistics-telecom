@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animated-carousel.css" />
+
+    <!-- ===== MATERIAL ICONS =====-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===== FAVICON =====-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Logistics || Telecom</title>
+  </head>
+
+  <body>
+    <!-- ===== REGISTRATION PAGE =====-->
+    <section class="flex-center registration">
+      <div class="flex-center r-container">
+        <div class="flex-center r-main">
+          <div class="flex-center r-logo">
+            <img src="assets/img/logo-black.png" alt="" loading="lazy" />
+          </div>
+
+          <div class="flex-center flex-col r-form">
+            <div class="flex-center rf-logo">
+              <img src="assets/img/mtn-logo.png" alt="" loading="lazy" />
+            </div>
+
+            <div class="flex-center flex-col rf-title">
+              <h1>Welcome Back</h1>
+              <p>Welcome back, Please enter your details</p>
+            </div>
+
+            <div class="flex-center flex-col rf-signin">
+              <div class="flex-center rfs-input">
+                <span class="material-symbols-outlined"> mail </span>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                  autocomplete="on"
+                  required
+                />
+                <div class="flex-center rfsi">
+                  <i class="bx bxs-check-circle rfsi-icon"></i>
+                  <!-- if error switch class name to "bxs-x-circle" and color to "red or the (error) css variable" -->
+                </div>
+              </div>
+
+              <div class="flex-center rfs-input">
+                <span class="material-symbols-outlined"> key </span>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Password"
+                  required
+                />
+                <div class="flex-center rfsi">
+                  <i class="bx bxs-check-circle rfsi-icon"></i>
+                  <!-- if error switch class name to "bxs-x-circle" and color to "red or the (error) css variable" -->
+                </div>
+              </div>
+
+              <div class="flex-center rfs-btn">
+                <button>Continue</button>
+              </div>
+            </div>
+
+            <div class="r-terms">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatum atque minus, provident nostrum unde non.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-center r-img">
+          <div
+            class="carousel fade responsive"
+            style="overflow: hidden; display: none; max-height: 0px"
+          >
+            <div
+              class="car-cont"
+              style="position: relative; width: 100%; height: 100%"
+            >
+              <a>
+                <img
+                  src="assets/img/r-carousel/r-img-3.jpg"
+                  alt=""
+                  loading="lazy"
+                  border="0"
+                />
+              </a>
+
+              <a>
+                <img
+                  src="assets/img/r-carousel/r-img-2.jpg"
+                  alt=""
+                  loading="lazy"
+                  border="0"
+                />
+              </a>
+
+              <a>
+                <img
+                  src="assets/img/r-carousel/r-img-1.jpg"
+                  alt=""
+                  loading="lazy"
+                  border="0"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      window.addEventListener("load", AOS.refresh);
+    </script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
